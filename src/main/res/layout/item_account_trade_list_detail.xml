@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/helps_open_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_2"
+    android:paddingTop="@dimen/size_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_listitem_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_state" />
+
+        <TextView
+            android:id="@+id/account_state"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:text="0" />
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/account_channel" />
+
+        <TextView
+            android:id="@+id/account_channel"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_listitem_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_fee_type" />
+
+        <TextView
+            android:id="@+id/account_fee_type"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:text="0" />
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/account_fee" />
+
+        <TextView
+            android:id="@+id/account_fee"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_listitem_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_confirm_amount" />
+
+        <TextView
+            android:id="@+id/account_confirm_amount"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/txt_red"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/account_confirm_share" />
+
+        <TextView
+            android:id="@+id/account_confirm_share"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+</LinearLayout>

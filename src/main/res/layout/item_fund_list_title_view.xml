@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fund_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="2dp">
+
+    <TextView
+        android:id="@+id/fund_title_tab01"
+        style="@style/text_13_m_g"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="left"
+        android:paddingLeft="13dp"
+        android:text="基金简称" />
+
+    <TextView
+        android:id="@+id/fund_title_tab02"
+        style="@style/text_13_m_g"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="万分收益" />
+
+    <TextView
+        android:id="@+id/fund_title_tab03"
+        style="@style/text_13_m_g"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1.1"
+        android:text="七日年化" />
+
+</LinearLayout>

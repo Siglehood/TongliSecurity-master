@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/channel_tv_id"
+                    style="@style/text_15_s_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_fund_channel" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height1"
+                    android:background="@drawable/recharge_bg_spinner"
+                    android:dropDownVerticalOffset="8px"
+                    android:dropDownWidth="match_parent"
+                    android:popupBackground="@drawable/channel_1_bg"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/channel_tv_id"
+                    style="@style/text_15_s_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_amount" />
+
+                <com.mobile.widget.EditTextWithClearButton
+                    android:id="@+id/recharge_amount"
+                    style="@style/text_large_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height1"
+                    android:background="@drawable/recharge_input"
+                    android:hint="@string/recharge_amount_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/size_2"
+                    android:paddingRight="@dimen/size_2"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"></com.mobile.widget.EditTextWithClearButton>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/text_15_s_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_amount_in_words" />
+
+                <TextView
+                    android:id="@+id/recharge_amount_in_words"
+                    style="@style/text_15_s_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/recharge_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_height1"
+                android:background="@drawable/bg_button_login"
+                android:text="@string/recharge_next_step"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/channel_tv_id"
+                style="@style/text_15_s_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/recharge_warm_tips"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/text_14_s_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:singleLine="false"
+                android:text="@string/recharge_warm_tips_items1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/channel_tv_id"
+                    style="@style/text_14_m_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3."
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/TextView3"
+                    style="@style/text_14_m_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_warm_tips_items2"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/channel_tv_id"
+                    style="@style/text_14_m_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4."
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/TextView3"
+                    style="@style/text_14_m_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recharge_warm_tips_items3"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

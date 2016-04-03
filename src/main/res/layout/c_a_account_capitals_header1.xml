@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_1"
+        android:layout_marginRight="@dimen/size_1"
+        android:background="@drawable/bg_account_info"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/account_total_capitals"
+                android:drawablePadding="@dimen/size_2"
+                android:gravity="center_vertical"
+                android:text="@string/account_query_capitals" />
+
+            <TextView
+                android:id="@+id/account_capitals"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_4"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView3"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/account_wallet"
+                android:drawablePadding="@dimen/size_2"
+                android:gravity="center_vertical"
+                android:text="@string/account_query_wallet" />
+
+            <TextView
+                android:id="@+id/account_wallet_balance"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_4"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/TextView3"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/account_year_rate"
+                android:drawablePadding="@dimen/size_2"
+                android:gravity="center_vertical"
+                android:text="@string/account_query_year_rate" />
+
+            <TextView
+                android:id="@+id/account_year_profit"
+                style="@style/text_14_s_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_4"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

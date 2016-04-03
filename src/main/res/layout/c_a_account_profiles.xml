@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_small_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_query_update_Time" />
+
+        <TextView
+            android:id="@+id/refresh_time"
+            style="@style/text_small_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_account_list_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_14_s_g"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/account_quary_fund" />
+
+        <LinearLayout
+            android:id="@+id/sort_p_profit_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/sort_p_profit"
+                style="@style/text_14_s_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/sort"
+                android:text="@string/account_query_earnings"
+                android:textColor="@drawable/text_color_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sort_p_profit_rate_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/sort_p_profit_rate"
+                style="@style/text_14_s_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/sort"
+                android:text="@string/account_query_earnings_rate"
+                android:textColor="@drawable/text_color_selector" />
+
+            <ImageView
+                android:id="@+id/title_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_arrow_down"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mobile.widget.XListViewForTrades
+        android:id="@+id/accout_profits_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="#00000000"></com.mobile.widget.XListViewForTrades>
+
+    <include layout="@layout/c_a_account_profiles_footer" />
+
+</LinearLayout>

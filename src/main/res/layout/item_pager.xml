@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.sig.tonglisecurity.widget.MyViewPager
+        android:id="@+id/ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ad_title_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ad_text"
+            style="@style/text_13_s_w"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left" />
+
+        <com.sig.tonglisecurity.widget.PageControlView
+            android:id="@+id/pageControlView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</RelativeLayout>

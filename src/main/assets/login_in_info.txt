@@ -1,0 +1,2 @@
+{"cust_type":"1","result":"1","sex":"男","session_id":"2014040904d29d84f54135bc48002245","level":"稳健偏进取型","name":"巴格达","score":"40"}
+

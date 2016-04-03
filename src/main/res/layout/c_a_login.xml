@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Spinner
+            android:id="@+id/spinner_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_spinner"
+            android:clickable="true"
+            android:dropDownVerticalOffset="10px"
+            android:entries="@array/id_types"
+            android:popupBackground="@drawable/bg_spinner_popup"
+            android:spinnerMode="dropdown" />
+
+        <com.sig.tonglisecurity.widget.EditTextWithClearButton
+            android:id="@+id/login_id_number"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/ic_account"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/login_account_hint"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <com.sig.tonglisecurity.widget.EditTextWithClearButton
+            android:id="@+id/login_id_password"
+            style="?android:attr/spinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height1"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_input"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+        <LinearLayout
+            android:id="@+id/login_verification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1">
+
+                <EditText
+                    android:id="@+id/login_verification_input"
+                    style="?android:attr/spinnerItemStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_height1"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_verification_input"
+                    android:drawableLeft="@drawable/ic_verification"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="@string/login_verification_hint"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null">
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/login_verification"
+                    style="@style/text_large_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_2"
+                    android:layout_marginRight="@dimen/size_2"
+                    android:background="@drawable/bg_login_verification"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="kz57" />
+
+                <LinearLayout
+                    android:id="@+id/login_change_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/text_14_m_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/login_verification_not_clear"
+                        android:textColor="@drawable/text_color_selector_black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/text_underline_color_selector" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/channel_tv_id"
+                style="@style/text_small_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_verification_prompt" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/login_keep_password"
+            style="@style/text_14_s_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_3"
+            android:layout_marginTop="@dimen/size_2"
+            android:button="@drawable/button_remember_account"
+            android:paddingLeft="30dp"
+            android:text="@string/login_keep_account" />
+
+        <!--  <Button
+             android:id="@+id/login_sign_in"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/input_height1"
+             android:background="@drawable/bg_button_login"
+             android:text="@string/login_sign_in"
+             android:textColor="@color/white" /> -->
+
+        <Button
+            android:id="@+id/login_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/login_sign_in"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/login_forget_pasword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_m_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/login_forget_pasword"
+                android:textColor="@drawable/text_color_selector_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/text_underline_color_selector" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

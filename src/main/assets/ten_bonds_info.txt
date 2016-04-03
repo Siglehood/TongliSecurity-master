@@ -1,0 +1,1 @@
+{"bonds":[{"netvalue_ratio":1.38,"name":"13雅砻江CP001","code":"041351012"},{"netvalue_ratio":0.46,"name":"13西南证券CP006","code":"071318006"}],"datasrc":"通力天天红2014年季度季报"}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_account_list_title"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_2"
+        android:paddingRight="@dimen/size_2">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_14_s_g"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/wallet_query_name" />
+
+        <TextView
+            android:id="@+id/wallet_query_request_title"
+            style="@style/text_14_s_g"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/wallet_query_request_amountorshare" />
+
+        <LinearLayout
+            android:id="@+id/sort_t_confirm_amount_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/sort_t_confirm_amount"
+                style="@style/text_14_s_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_query_state" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mobile.widget.XListViewForTrades
+        android:id="@+id/wallet_query_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="#00000000"></com.mobile.widget.XListViewForTrades>
+
+</LinearLayout>

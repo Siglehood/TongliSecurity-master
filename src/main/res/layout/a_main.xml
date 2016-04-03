@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_view">
+
+                <!-- 基金 -->
+                <fragment
+                    android:id="@+id/jijin_view"
+                    android:name="com.sig.tonglisecurity.fragment.JijinFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/c_a_jijin" />
+
+                <!-- 账户 -->
+                <fragment
+                    android:id="@+id/member_view"
+                    android:name="com.sig.tonglisecurity.fragment.MemberFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/c_a_member" />
+
+
+                <!-- 钱袋子 -->
+                <RelativeLayout
+                    android:id="@+id/fs_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:name="com.sig.tonglisecurity.fragment.FSFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout="@layout/c_a_fs" />
+                </RelativeLayout>
+
+                <fragment
+                    android:id="@+id/settings_view"
+                    android:name="com.sig.tonglisecurity.fragment.SettingsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/c_a_settings" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/tab_bar_bg"
+                android:gravity="center_vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/tab_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/tab_scroll"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/notice_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/notice_logo"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </TabHost>
+
+    <RelativeLayout
+        android:id="@+id/index_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_index"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.sig.tonglisecurity.widget.PageControlView
+            android:id="@+id/pageControlView_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

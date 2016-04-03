@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基金类型 -->
+    <string-array name="fund_types">
+        <item>全部类别</item>
+        <item>股票型</item>
+        <item>混合型</item>
+        <item>指数型</item>
+        <item>QDII</item>
+        <item>债券型</item>
+        <item>货币型</item>
+        <item>保本型</item>
+    </string-array>
+
+    <!-- 排序类别 -->
+    <string-array name="sort_types">
+        <item>默认排序</item>
+        <item>当天涨跌幅</item>
+        <item>最近三个月收益率</item>
+        <item>今年以来收益率</item>
+        <item>最近一年收益率</item>
+    </string-array>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+android:windowSoftInputMode
+activity主窗口与软键盘的交互模式，可以用来避免输入法面板遮挡问题，Android1.5后的一个新特性。
+
+这个属性能影响两件事情：
+
+【一】当有焦点产生时，软键盘是隐藏还是显示
+
+【二】是否减少活动主窗口大小以便腾出空间放软键盘
+
+它的设置必须是下面列表中的一个值，或一个”state…”值加一个”adjust…”值的组合。
+
+在任一组设置多个值——多个”state…”values，例如＆mdash有未定义的结果。各个值之间用|分开。
+
+例如:<activity android:windowSoftInputMode="stateVisible|adjustResize". . . >
+
+在这设置的值(除"stateUnspecified"和"adjustUnspecified"以外)将覆盖在主题中设置的值
+
+各值的含义：
+
+【A】stateUnspecified：软键盘的状态并没有指定，系统将选择一个合适的状态或依赖于主题的设置
+
+【B】stateUnchanged：当这个activity出现时，软键盘将一直保持在上一个activity里的状态，无论是隐藏还是显示
+
+【C】stateHidden：用户选择activity时，软键盘总是被隐藏
+
+【D】stateAlwaysHidden：当该Activity主窗口获取焦点时，软键盘也总是被隐藏的
+
+【E】stateVisible：软键盘通常是可见的
+
+【F】stateAlwaysVisible：用户选择activity时，软键盘总是显示的状态
+
+【G】adjustUnspecified：默认设置，通常由系统自行决定是隐藏还是显示
+
+【H】adjustResize：该Activity总是调整屏幕的大小以便留出软键盘的空间（可以显示全部屏幕）
+
+【I】adjustPan：当前窗口的内容将自动移动以便当前焦点从不被键盘覆盖和用户能总是看到输入内容的部分（软键盘会遮挡屏幕）
+
+
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sig.tonglisecurity">
+
+    <!-- 读取您的SD卡中的内容、修改或删除您的SD卡中的内容 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 开机启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 更改系统显示设置 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 大致位置（基于网络） -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 查看WLAN连接 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 连接WLAN和断开连接 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 精确位置（基于GPS和网络） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取额外的位置信息提供程序命令 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 更改网络连接性 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 防止手机休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 读取手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 控制震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取通讯录 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".app.GFFApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 首页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 首页 -->
+        <activity
+            android:name=".activity.HeadDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 帮助 -->
+        <activity
+            android:name=".activity.HelpsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 网络不可用 -->
+        <activity
+            android:name=".activity.NetErrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 关于我们 -->
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 消息详情 -->
+        <activity
+            android:name=".activity.MsgDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 基金详情 -->
+        <activity
+            android:name=".activity.FundDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 收藏列表 -->
+        <activity
+            android:name=".activity.FundFavActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 消息中心 -->
+        <activity
+            android:name=".activity.MsgCenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 充值 -->
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.RechargeConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.RechargeResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 快速取现 -->
+        <activity
+            android:name=".activity.RedeemFastActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <activity
+            android:name=".activity.RedeemFastInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".activity.RedeemFastConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 钱袋子查询页面 -->
+        <activity
+            android:name=".activity.WalletQueryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlay" />
+
+
+    </application>
+
+</manifest>

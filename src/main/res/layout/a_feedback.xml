@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_15_s_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_2"
+            android:text="@string/feedback_content" />
+
+        <EditText
+            android:id="@+id/context"
+            style="@style/text_15_m_b"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_feedback_content"
+            android:gravity="left"
+            android:hint="@string/feedback_content_hint"
+            android:padding="@dimen/size_2"
+            android:textCursorDrawable="@null"></EditText>
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_15_s_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_2"
+            android:text="@string/feedback_contact" />
+
+        <EditText
+            android:id="@+id/contact"
+            style="@style/text_15_s_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_feedback_contact"
+            android:gravity="left|center_vertical"
+            android:hint="@string/feedback_contact_hint"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/size_2"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+</LinearLayout>

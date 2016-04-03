@@ -1,0 +1,1 @@
+{"capitals":"0.00","funds":[],"wallet_balance":"0.00","year_profit":"0.00","isLoginOut":"N","transfer_funds":[],"redeem_funds":[],"year_rate":"0.00"}

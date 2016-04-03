@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recharge_spinner_item"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/recharge_bg_spinner_dropdown_item"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:textColor="@color/black" />

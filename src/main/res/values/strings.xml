@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">通力证券</string>
+
+    <!-- 主界面 -->
+    <string name="tab_title_01">基金</string>
+    <string name="tab_title_02">我</string>
+    <string name="tab_title_03">交易</string>
+    <string name="tab_title_04">帮助</string>
+
+    <!-- 账户登陆界面 -->
+    <string name="login_tab_title">用户</string>
+    <string name="login_account_hint">请输入证件号码</string>
+    <string name="login_password_hint">请输入交易/登录密码</string>
+    <string name="login_verification_hint">验证码</string>
+    <string name="login_keep_account">记住账号</string>
+    <string name="login_verification_not_clear">看不清？</string>
+    <string name="login_forget_pasword">忘记密码</string>
+    <string name="login_verification_prompt">(请输入右边图片中字符)</string>
+    <string name="login_sign_in">登录</string>
+    <string name="login_sign_out">退出</string>
+
+    <!-- 设置界面 -->
+    <string name="settings_msg_right">全部已读</string>
+    <string name="settings_msg_center">消息中心</string>
+    <string name="settings_msg_detail">消息详情</string>
+    <string name="settings_push">接收推送</string>
+    <string name="settings_help">帮助</string>
+    <string name="settings_feedback">意见反馈</string>
+    <string name="settings_customer">拨打客服电话</string>
+    <string name="settings_about">关于我们</string>
+    <string name="settings_grade">去 App store 评分</string>
+
+    <!-- 钱袋子界面 -->
+    <string name="wallet_available_balance">"可 用  余 额："</string>
+    <string name="wallet_undistributed_income">未分配收益：</string>
+    <string name="wallet_charge_description">利率是活期的18倍哦</string>
+    <string name="wallet_charge">充值</string>
+    <string name="wallet_fast_cash">快速取现</string>
+    <string name="wallet_fast_cash_description">取现无需手续费，资金立即到账</string>
+    <string name="wallet_query">查询</string>
+    <string name="wallet_query_description">随时随地关注您的账户</string>
+    <string name="wallet_unsignin_prompt">您还没有登录！</string>
+    <string name="wallet_unsignin_prompt_detail">登录之后即刻拥有自己的钱袋子</string>
+    <string name="wallet_sev">七日年化收益率</string>
+
+    <!-- 意见反馈界面 -->
+    <string name="feedback_content">反馈内容：</string>
+    <string name="feedback_content_hint">非常感谢您的宝贵意见，我们会尽快跟您联系！</string>
+    <string name="feedback_contact">联系方式：（选填）</string>
+    <string name="feedback_contact_hint">Email或电话号码</string>
+
+    <string name="MemberView_01">请输入证件号码</string>
+    <string name="MemberView_02">请输入密码</string>
+    <string name="MemberView_03">验证码错误</string>
+    <string name="MemberView_l_01">没有网络，请检查您的网络连接</string>
+    <string name="MemberView_l_02">网络繁忙,请稍后在试</string>
+    <string name="MemberView_l_03">未知错误</string>
+
+    <string name="TitledListView01">基金简称</string>
+    <string name="TitledListView02">万份收益</string>
+    <string name="TitledListView03">单位净值</string>
+
+
+    <!-- 充值界面 -->
+    <string name="recharge_warm_tips">温馨提示：</string>
+    <string name="recharge_warm_tips_items1">1.目前充值仅支持带有【快捷】字样的渠道\n2.每次充值不得少于100元</string>
+    <string name="recharge_warm_tips_items2">充值的份额T+1个工作日可查询， T+2个工作日可使用（T为充值的工作日）</string>
+    <string name="recharge_warm_tips_items3">工作日15:00以后或非工作日提交的交易申请，按照下一个工作日处理</string>
+    <string name="recharge_warm_tips_step3">"        投资有风险，基金过往业绩不代表未来表现。货币基金不等于银行存款，投资人应充分了解基金定投和零存整取等存储方式的区别，定投不能规避基金投资所固有的风险，基金公司不能保证投资人获得收益。投资者购买基金时请仔细阅读基金的《基金合同》和《招募说明书》。"</string>
+    <string name="recharge_amount_in_words">大写金额：</string>
+    <string name="recharge_amount">充值金额：</string>
+    <string name="recharge_amount_hint">请输入充值金额</string>
+    <string name="recharge_fund_channel">资金渠道：</string>
+    <string name="recharge_next_step">下一步</string>
+    <string name="recharge_fund_source">资金来源：</string>
+    <string name="recharge_pay_account">支付账户：</string>
+    <string name="recharge_take_out">取出：</string>
+    <string name="recharge_store">存入：</string>
+    <string name="recharge_fund">金额(元)：</string>
+    <string name="recharge_handling_charge">手续费(元)：</string>
+    <string name="recharge_transaction_password">交易密码：</string>
+    <string name="recharge_immediately">立即充值</string>
+    <string name="recharge_password_hint">点击输入密码</string>
+    <string name="recharge_confirm">充值确认</string>
+    <string name="recharge_result">充值结果</string>
+    <string name="recharge_requestno">申购单编号：</string>
+    <string name="recharge_time">"下 单  时 间："</string>
+    <string name="recharge_trade_date">所属交易日：</string>
+    <string name="recharge_not_support">"您的渠道不支持代扣，请重新选择"</string>
+
+    <!-- 账户界面 -->
+    <string name="account_quary_fund">基金简称</string>
+    <string name="account_query_earnings_rate">收益率</string>
+    <string name="account_query_earnings">收益</string>
+    <string name="account_query_update_Time">更新时间:</string>
+    <string name="account_positions_query">持仓查询</string>
+    <string name="account_gain_loss_query">盈亏查询</string>
+    <string name="account_transaction_query">交易查询</string>
+    <string name="account_query_share">份额</string>
+    <string name="account_query_capital">资产</string>
+    <string name="account_query_capitals">"总  资  产："</string>
+    <string name="account_query_wallet">"活 期 宝："</string>
+    <string name="account_query_year_rate">"今年收益："</string>
+    <string name="account_query_business">业务</string>
+    <string name="account_query_amount">金额</string>
+    <string name="login_warm_promptbackup">温馨提示:\n1.一站通客户请使用交易密码登录，暂不支持一站通密码登录\n2.代销客户请使用查询密码登录\n3.网上交易客户请使用交易密码登录</string>
+    <string name="login_warm_prompt1">"一站通客户请使用交易密码登录，暂不支持一站通密码登录"</string>
+    <string name="login_warm_prompt2">"2.代销客户请使用查询密码登录\n3.网上交易客户请使用交易密码登录"</string>
+    <string name="account_capital_begin">期初余额：</string>
+    <string name="account_capital_end">期末余额：</string>
+    <string name="account_bqtzsd">本期投资所得：</string>
+    <string name="account_state">交易状态：</string>
+    <string name="account_channel">销售渠道：</string>
+    <string name="account_confirm_amount">确认金额：</string>
+    <string name="account_confirm_share">确认份额：</string>
+    <string name="account_fee_type">收费方式：</string>
+    <string name="account_fee">"手  续  费："</string>
+    <string name="account_today_profits">当天盈亏</string>
+    <string name="account_logout_fail">退出失败</string>
+
+    <!-- 快速取现页面 -->
+    <string name="redeem_avalable_balance">"可 用  余 额："</string>
+    <string name="redeem_undistri_profit">"未分配收益："</string>
+    <string name="redeem_fund_source">资金来源</string>
+    <string name="redeem_fund_source_colon">资金来源：</string>
+    <string name="redeem_avalable_fund">"可用金额："</string>
+    <string name="redeem_amount">"取现金额："</string>
+    <string name="redeem_amount_hint">"请输入取现金额"</string>
+    <string name="redeem_avalable_balance_title">"可用余额"</string>
+    <string name="redeem_amount_in_words">大写金额：</string>
+    <string name="redeem_prompt">取现金额实时到账</string>
+    <string name="redeem_readme">请仔细阅读《通力基金网上直销货币基金快速赎回服务协议》且同意接受条款</string>
+    <string name="redeem_arrive_bank">到账银行：</string>
+    <string name="redeem_arrive_account">到账账户：</string>
+    <string name="redeem_immediately">立即取现</string>
+    <string name="redeem_confirm">快速取现确认</string>
+    <string name="redeem_result">快速取现结果</string>
+    <string name="redeem_warm_tips_items1">"快速赎回支持直连银行（工、农、建、招、交）、广州银联（通力）、上海银联（浦发、兴业、南京、长沙、上海农商、金华商行）通联（工、农、中、建）天天盈账户（工、农、中、建、招、交、浦发、 深发展、兴业、光大、通力、上海、邮储、华夏）；"</string>
+    <string name="redeem_warm_tips_items2">"每个账户当天快速赎回限额是50万；"</string>
+
+    <!-- 钱袋子查询页面 -->
+    <string name="wallet_query_all">全部</string>
+    <string name="wallet_query_redeem">取现</string>
+    <string name="wallet_query_recharge">充值</string>
+    <string name="wallet_query_state">状态</string>
+    <string name="wallet_query_name">业务名称</string>
+    <string name="wallet_query_amount">确认金额</string>
+    <string name="wallet_query_request_amountorshare">申请金额/份额</string>
+    <string name="wallet_query_request_amount">申请金额</string>
+    <string name="wallet_query_request_share">申请份额</string>
+    <string name="wallet_query_title">钱袋子查询</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

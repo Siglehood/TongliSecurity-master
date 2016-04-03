@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/helps_open_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/size_2"
+    android:paddingTop="@dimen/size_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_listitem_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_2"
+        android:paddingRight="20dp">
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_capital_begin" />
+
+        <TextView
+            android:id="@+id/capital_begin"
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:text="0" />
+
+        <TextView
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_capital_end" />
+
+        <TextView
+            android:id="@+id/capital_end"
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ex_listitem_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_2"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/channel_tv_id"
+            style="@style/text_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_bqtzsd" />
+
+        <TextView
+            android:id="@+id/bqtzsd"
+            style="@style/text_normal_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="@color/txt_red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

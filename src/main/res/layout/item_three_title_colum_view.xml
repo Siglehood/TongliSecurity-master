@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/tile01"
+        style="@style/text_13_s_c_title_clolor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="申/认购金额（M）" />
+
+    <TextView
+        android:id="@+id/tile02"
+        style="@style/text_13_s_c_title_clolor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="认购费率" />
+
+    <TextView
+        android:id="@+id/tile03"
+        style="@style/text_13_s_c_title_clolor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="申购费率" />
+
+</LinearLayout>

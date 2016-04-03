@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="red">#e85743</color>
+    <color name="gray">#817f7c</color>
+    <color name="black">#434343</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#fffabc</color>
+
+
+    <color name="choose_bg">#dddcdc</color>
+    <color name="app_bg">#dddcdc</color>
+
+    <color name="k_color">#1e24a0</color>
+    <color name="k_bg">#ebebeb</color>
+    <color name="k_line_below">#1e24a0</color>
+    <color name="transparent">#00000000</color>
+    <color name="bgColor">#000000</color>
+    <color name="title_clolor">#5a5a5a</color>
+    <color name="txt_gray">#323131</color>
+    <color name="txt_orange">#fa741f</color>
+    <color name="txt_red">#a71a1a</color>
+
+    <color name="account_profits">#fa7420</color>
+    <color name="helps_open_color">#d5d5d5</color>
+    <color name="gray_white">#ededed</color>
+    <color name="help_content_color">#513a25</color>
+
+</resources> 

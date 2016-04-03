@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/fund_feerate_selector_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_14_s_l_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他费用" />
+
+    <com.mobile.widget.LinearLayoutForListView
+        android:id="@+id/other_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>
